@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require('mongoose');
 const Product = require('./models/products');
 
-mongoose.connect('mongodb+srv://MyUser:Password@clusterforlearn.nhhdaya.mongodb.net/?appName=clusterForLearn')
+mongoose.connect('mongodb+srv://<MyUser>:<Password>@clusterforlearn.nhhdaya.mongodb.net/?appName=clusterForLearn')
   .then(() => console.log('Connexion à MongoDB réussie !'))
   .catch((err) => console.log('Connexion à MongoDB échouée !', err));
 
